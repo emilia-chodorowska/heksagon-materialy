@@ -1,0 +1,22 @@
+2026-03-16T09:36:22.191+01:00  INFO 29479 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-16T09:36:22.179+01:00  INFO 29540 --- [discord-mcp] [JDA MainWS-WriteThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-16T09:36:27.163+01:00 ERROR 29479 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Encountered IDENTIFY Rate Limit!
+2026-03-16T09:36:27.203+01:00  WARN 29479 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-16T09:36:27.185+01:00 ERROR 29540 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Encountered IDENTIFY Rate Limit!
+2026-03-16T09:36:27.206+01:00  WARN 29540 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-16T11:41:53.285+01:00  INFO 29479 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-16T11:41:53.304+01:00  INFO 29540 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-16T11:41:58.535+01:00  WARN 29540 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-16T11:41:58.550+01:00  WARN 29479 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-16T11:57:04.482+01:00  INFO 29540 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-16T11:57:04.491+01:00  INFO 29479 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-16T11:57:09.709+01:00  WARN 29540 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-16T11:57:09.730+01:00  WARN 29479 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-16T12:12:15.052+01:00  INFO 29540 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-16T12:12:15.058+01:00  INFO 29479 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-16T12:12:20.321+01:00  WARN 29540 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-16T12:12:20.337+01:00  WARN 29479 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-16T12:27:25.766+01:00  INFO 29540 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-16T12:27:25.814+01:00  INFO 29479 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-16T12:27:26.064+01:00  INFO 29540 --- [discord-mcp] [JDA MainWS-ReadThread] net.dv8tion.jda.api.JDA                  : Finished (Re)Loading!
+2026-03-16T12:27:31.058+01:00  WARN 29479 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue

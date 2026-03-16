@@ -1,0 +1,1 @@
+2026-03-15T03:43:20.441+01:00  WARN 29530 --- [discord-mcp] [ConcurrentSessionController-Worker-0] n.d.j.internal.requests.WebSocketClient  : Reconnect failed! Next attempt in 900s

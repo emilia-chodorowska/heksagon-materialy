@@ -1,0 +1,12 @@
+2026-03-13T07:42:49.132+01:00  WARN 55764 --- [discord-mcp] [ConcurrentSessionController-Worker-0] n.d.j.internal.requests.WebSocketClient  : Reconnect failed! Next attempt in 512s
+2026-03-13T10:10:20.823+01:00  INFO 55764 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-13T10:10:25.903+01:00 ERROR 55764 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Encountered IDENTIFY Rate Limit! Waiting 78 milliseconds before trying again!
+2026-03-13T10:10:25.985+01:00  WARN 55764 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-13T10:25:31.395+01:00  INFO 55764 --- [discord-mcp] [JDA MainWS-WriteThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-13T10:25:36.753+01:00  WARN 55764 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-13T10:40:42.521+01:00  INFO 55764 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-13T10:40:47.737+01:00  WARN 55764 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-13T10:55:53.368+01:00  INFO 55764 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-13T10:55:58.736+01:00  WARN 55764 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-13T18:01:37.930+01:00  INFO 55764 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-13T18:01:43.331+01:00  WARN 55764 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue

@@ -1,0 +1,14 @@
+2026-03-07T00:58:49.575+01:00  WARN 29530 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Reconnect failed! Next attempt in 2s
+2026-03-07T00:58:52.111+01:00  WARN 29530 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-07T01:29:36.345+01:00  WARN 29530 --- [discord-mcp] [ConcurrentSessionController-Worker-0] n.d.j.internal.requests.WebSocketClient  : Reconnect failed! Next attempt in 8s
+2026-03-07T01:44:22.264+01:00  INFO 29530 --- [discord-mcp] [JDA MainWS-WriteThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-07T02:36:32.652+01:00 ERROR 29530 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Encountered IDENTIFY Rate Limit! Waiting 3125387 milliseconds before trying again!
+2026-03-07T09:26:10.439+01:00  WARN 29530 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1008). Appending to reconnect queue
+2026-03-07T09:26:31.761+01:00  INFO 29530 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-07T09:26:32.073+01:00  INFO 29530 --- [discord-mcp] [JDA MainWS-ReadThread] net.dv8tion.jda.api.JDA                  : Finished (Re)Loading!
+2026-03-07T16:37:39.141+01:00  WARN 29530 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-07T16:37:41.447+01:00  INFO 29530 --- [discord-mcp] [JDA MainWS-WriteThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-07T16:37:41.756+01:00  INFO 29530 --- [discord-mcp] [JDA MainWS-ReadThread] net.dv8tion.jda.api.JDA                  : Finished (Re)Loading!
+2026-03-07T17:28:50.125+01:00  WARN 29530 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+2026-03-07T17:28:52.514+01:00  INFO 29530 --- [discord-mcp] [JDA MainWS-WriteThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2026-03-07T19:19:51.106+01:00 ERROR 29530 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Encountered IDENTIFY Rate Limit! Waiting 6653591 milliseconds before trying again!

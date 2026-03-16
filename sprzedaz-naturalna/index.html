@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprzedaz Naturalna - Heksagon</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .course-card {
+            transition: all 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(167, 197, 169, 0.3), 0 10px 10px -5px rgba(167, 197, 169, 0.2);
+        }
+
+        .file-link {
+            transition: all 0.3s ease;
+        }
+
+        .file-link:hover {
+            transform: translateX(5px);
+            border-color: #a7c5a9;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen py-8">
+
+    <div class="relative container max-w-3xl my-4 p-4 sm:p-5 md:p-6 bg-white shadow-xl">
+
+        <img
+            src="../images/liscie-gora.png"
+            alt="Dekoracyjne liscie"
+            class="absolute top-0 left-0 w-1/3 opacity-40 pointer-events-none"
+        >
+
+        <!-- Back link -->
+        <a href="../" class="relative z-10 inline-flex items-center text-sm text-[#a7c5a9] hover:underline mb-6">
+            ← Wstecz do Heksagon
+        </a>
+
+        <!-- Header -->
+        <header class="text-center mb-8 md:mb-12 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-semibold leading-tight text-slate-800 mb-2">
+                Sprzedaz Naturalna
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 font-light">
+                Kurs sprzedazy naturalnej w MLM
+            </p>
+        </header>
+
+        <!-- Content -->
+        <section class="mb-8 relative z-10">
+            <div class="flex flex-col gap-6 max-w-2xl mx-auto">
+
+                <!-- Omowienie -->
+                <a href="omowienie-sprzedaz-naturalna-MLM.html" class="course-card block bg-white shadow-lg overflow-hidden">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-slate-800">Omowienie kursu</h3>
+                        <p class="text-slate-600 mt-2">Szczegolowe omowienie materialow ze Sprzedazy Naturalnej MLM</p>
+                    </div>
+                </a>
+
+                <!-- Prezentacja -->
+                <a href="prezentacja-sprzedaz-naturalna.html" class="course-card block bg-white shadow-lg overflow-hidden">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-slate-800">Prezentacja</h3>
+                        <p class="text-slate-600 mt-2">Prezentacja reveal.js ze Sprzedazy Naturalnej</p>
+                    </div>
+                </a>
+
+                <!-- Ebook PDF -->
+                <a href="sprzedaz_naturalna_ebook.pdf" download class="course-card block bg-white shadow-lg overflow-hidden">
+                    <div class="p-8 flex items-center gap-4">
+                        <span class="w-12 h-12 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded">PDF</span>
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800">Ebook</h3>
+                            <p class="text-slate-600 mt-1">Sprzedaz Naturalna — ebook do pobrania</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Notatki -->
+                <div class="course-card bg-white shadow-lg overflow-hidden p-8">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">Notatki z zadan</h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="notatka-zadanie-1.md" target="_blank" class="file-link flex items-center p-3 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="text-slate-700 font-medium">Zadanie 1</span>
+                        </a>
+                        <a href="notatka-zadanie-2.md" target="_blank" class="file-link flex items-center p-3 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="text-slate-700 font-medium">Zadanie 2</span>
+                        </a>
+                        <a href="notatka-zadanie-3.md" target="_blank" class="file-link flex items-center p-3 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="text-slate-700 font-medium">Zadanie 3</span>
+                        </a>
+                        <a href="refleksja-zadanie-2.md" target="_blank" class="file-link flex items-center p-3 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="text-slate-700 font-medium">Refleksja — Zadanie 2</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-12 pt-8 border-t border-gray-200 text-center text-slate-400 text-sm relative z-10">
+            <p class="text-xs">Heksagon — Materialy szkoleniowe</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

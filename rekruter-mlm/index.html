@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekruter MLM - Heksagon</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .module-tab-button {
+            transition: all 0.3s ease;
+        }
+
+        .module-tab-button:hover {
+            background-color: #d8e4d3;
+        }
+
+        .module-tab-button.active {
+            background-color: #a7c5a9;
+            color: white;
+        }
+
+        .file-link {
+            transition: all 0.3s ease;
+        }
+
+        .file-link:hover {
+            transform: translateX(5px);
+            border-color: #a7c5a9;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen py-8">
+
+    <div class="relative container max-w-3xl my-4 p-4 sm:p-5 md:p-6 bg-white shadow-xl">
+
+        <img
+            src="../images/liscie-gora.png"
+            alt="Dekoracyjne liscie"
+            class="absolute top-0 left-0 w-1/3 opacity-40 pointer-events-none"
+        >
+
+        <!-- Back link -->
+        <a href="../" class="relative z-10 inline-flex items-center text-sm text-[#a7c5a9] hover:underline mb-6">
+            ← Wstecz do Heksagon
+        </a>
+
+        <!-- Header -->
+        <header class="text-center mb-8 md:mb-12 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-semibold leading-tight text-slate-800 mb-2">
+                Rekruter MLM
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 font-light">
+                8 modulow z materialami do pobrania
+            </p>
+        </header>
+
+        <!-- Download all -->
+        <div class="text-center mb-8 relative z-10">
+            <a href="https://drive.google.com/uc?export=download&id=1XUWmqwmbv1HUWBuaUj1K_tD-tQGmGw-7" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-[#a7c5a9] text-white rounded-xl font-semibold text-sm hover:bg-[#8fb591] transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Pobierz wszystkie materialy (ZIP)
+            </a>
+        </div>
+
+        <!-- Module Tabs + Content -->
+        <section class="mb-8 relative z-10">
+            <div class="bg-white shadow-lg overflow-hidden p-6 max-w-2xl mx-auto">
+                <div class="flex flex-wrap gap-2 mb-6 pb-4 border-b border-gray-200">
+                    <button class="module-tab-button active px-4 py-2 rounded-lg text-sm font-semibold bg-gray-100 text-slate-700" onclick="openModule(event, 'modul1')">Modul 1</button>
+                    <button class="module-tab-button px-4 py-2 rounded-lg text-sm font-semibold bg-gray-100 text-slate-700" onclick="openModule(event, 'modul2')">Modul 2</button>
+                    <button class="module-tab-button px-4 py-2 rounded-lg text-sm font-semibold bg-gray-100 text-slate-700" onclick="openModule(event, 'modul3')">Modul 3</button>
+                    <button class="module-tab-button px-4 py-2 rounded-lg text-sm font-semibold bg-gray-100 text-slate-700" onclick="openModule(event, 'modul4')">Modul 4</button>
+                    <button class="module-tab-button px-4 py-2 rounded-lg text-sm font-semibold bg-gray-100 text-slate-700" onclick="openModule(event, 'modul5')">Modul 5</button>
+                    <button class="module-tab-button px-4 py-2 rounded-lg text-sm font-semibold bg-gray-100 text-slate-700" onclick="openModule(event, 'modul6')">Modul 6</button>
+                    <button class="module-tab-button px-4 py-2 rounded-lg text-sm font-semibold bg-gray-100 text-slate-700" onclick="openModule(event, 'modul7')">Modul 7</button>
+                    <button class="module-tab-button px-4 py-2 rounded-lg text-sm font-semibold bg-gray-100 text-slate-700" onclick="openModule(event, 'modul8')">Modul 8</button>
+                </div>
+
+                <!-- Modul 1 -->
+                <div id="modul1" class="module-content">
+                    <h4 class="text-xl font-bold text-slate-800 mb-4 pb-2 border-b-2 border-[#a7c5a9]">Modul 1</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://drive.google.com/uc?export=download&id=1JzHlyX4Jj23hXQcZaToenxauomOPj3lZ" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Zeszyt cwiczen</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1IKunj9-UI00WZQtCmorQw73IAMjsMdG4" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Przyklady CTA</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1m3SNi9w0apAGURFchWt-At63-PzIQ48U" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Tematy na tresci - tydzien 1</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1Xu0S6-OGBumx8gVywfjIeMDo4w5_ai-w" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Tematy na tresci - tydzien 2</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1A7ew20Q-OXZ54n3Up5OnrTAAskmBtSp-" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Zadania do wykonania po Module I - checklista</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1QRnq1oPejGfEahq3chtv2z_y-ce7K6ce" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Arkusz do sprawdzania - modul I</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Modul 2 -->
+                <div id="modul2" class="module-content hidden">
+                    <h4 class="text-xl font-bold text-slate-800 mb-4 pb-2 border-b-2 border-[#a7c5a9]">Modul 2</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://drive.google.com/uc?export=download&id=1SVGOBMpZ8kIumjzZ8kzYrY3sTc6cJSsX" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">BIO - Komenda GPT - modul II</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1yYSSfki_zMQ895E8Wq7MvsWoNzAd1zRO" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Psychologia kolorow - modul II</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1CQNhFlWv9tDP8_L3pCZ6BrpywloZGxjT" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Checklista - modul II</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1zUlfZrCb1bzzhJd5YipNKYXvZmwTJNDi" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Sprawdzanie zadan - modul II</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Modul 3 -->
+                <div id="modul3" class="module-content hidden">
+                    <h4 class="text-xl font-bold text-slate-800 mb-4 pb-2 border-b-2 border-[#a7c5a9]">Modul 3</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://drive.google.com/uc?export=download&id=1HqZs1Uypq4uouJbCw-XXOaicrOEf1dGC" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Przyklady tresci</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1OamzBIKsgVsYrFEEReh0-3bI3vFSE_SD" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Przykladowe naglowki</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1yQ2H1LP7B13CX16pS7RIOdamOo8_eMVL" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Komenda GPT - TWORZENIE TRESCI</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1AvpBY7oo5-EBb52OTZ3ofAph6xeDDyPt" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Komenda GPT - TEMATY NA ROLKI</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1Hw-Ns7AfjycpuO1Pfb45U7fIfwYZPX6c" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Komenda GPT - MODEL AIDA</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1KncE7XqHYeGg-K5Dqb7tqefIWBzJQ88u" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Komenda GPT - HARMONOGRAM TRESCI</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1Z4MVDgnAUtsED_tqLTF4-e9VE0wev3ri" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">MODUL III - Harmonogram tresci</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1QMZ7QIKrUkZeCpr7Ojiyq0hxgv4Boi1h" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Checklista - modul III</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=15aFV70zWYNvG3xJchVln9O4Ura-SNaVD" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Sprawdzanie zadan - modul III</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=11qjMIMzyEdpjAyw6HHLA_GDo9c3zlDIh" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Notatki do nagrania LIVE - zmiany na IG</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=17gtPBGbGJuqFJXNokBrs5estUNeBiEZ7" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Grafika - nowe wymiary postow IG</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1At2jgWSk0yHevZn0pDOoVLDEsWHgUCSa" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">CTA - nowe zasady FB</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Modul 4 -->
+                <div id="modul4" class="module-content hidden">
+                    <h4 class="text-xl font-bold text-slate-800 mb-4 pb-2 border-b-2 border-[#a7c5a9]">Modul 4</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://drive.google.com/uc?export=download&id=17gm2VStqEB4efjqrh66ygKrqrj0hQYbR" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Przyklady wiadomosci</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1IwdJrbEpmm6iZmL_M_rqmM8c4nN86NBp" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-green-600 text-white text-xs font-bold rounded mr-4">XLSX</span>
+                            <span class="text-slate-700 font-medium">Lista kontaktow</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1mY13uanEtTQVCXfdWb5CjswM0CSgGRru" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Checklista - modul IV</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1KkFirQE3U-YgeS4lz6zQISgsRS5tjfSu" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Arkusz do sprawdzania - modul IV</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Modul 5 -->
+                <div id="modul5" class="module-content hidden">
+                    <h4 class="text-xl font-bold text-slate-800 mb-4 pb-2 border-b-2 border-[#a7c5a9]">Modul 5</h4>
+                    <div class="p-8 text-center text-slate-500 bg-gray-50 rounded-lg">
+                        Brak materialow do pobrania w tym module.
+                    </div>
+                </div>
+
+                <!-- Modul 6 -->
+                <div id="modul6" class="module-content hidden">
+                    <h4 class="text-xl font-bold text-slate-800 mb-4 pb-2 border-b-2 border-[#a7c5a9]">Modul 6</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://drive.google.com/uc?export=download&id=126kGIIZmnJ8nDiGjG1yU4T1sPsjX1Z6V" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - Skrypt</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1RMStwaKFD8Faphk7s6clMHGLckKJaFUi" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 1</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1BwbRlc_bIAnOB5wRY7nF3fcMsf44vL6T" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 2</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1kaN71Ek5ASFBIge6ipSnCdNK9hAG1QLg" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 3</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1VGKZ5C-iZLMVCh_c95bhneWRViiuwrXk" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 4</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1ECV596gnOga5pZLPxWv2WSy7BON31RZK" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 5</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1VUG5yrJZLpnbkCclBl2xlTxiwos9KDNV" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 6</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1RaitMlUZaNVHMvW6qnGNIv-ysa-5brc6" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 7</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1keKVwe_aPOMy6DSLZqIRgyd2tv1xwWHE" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 8</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1CEu0OJ3ksMaBp9K6WAw-urvXR-sELeRB" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 9</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1shSJY2D9kHZ37mk3tZCbeG1L8aUoGA7c" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 10</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1eWrngGMRCyYVWvsAy3P-96n8e-TFK1i9" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 11</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=17d3tuGAwDOUFKEGEtQG0Ga68iCyB2HAR" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 12</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1hjGABdRvAGqdcVDxVoKgONz1f2PcbpG0" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white text-xs font-bold rounded mr-4">IMG</span>
+                            <span class="text-slate-700 font-medium">Prezentacja mozliwosci - SLAJD 13</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=13pO-Ud5m3fjEFPYWHp1_Ax6il4-1wXKZ" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Checklista - modul VI</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=15riQYw71HE1_OAMPKBIccwryGaBUBxfu" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Arkusz do sprawdzania - modul VI</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Modul 7 -->
+                <div id="modul7" class="module-content hidden">
+                    <h4 class="text-xl font-bold text-slate-800 mb-4 pb-2 border-b-2 border-[#a7c5a9]">Modul 7</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://drive.google.com/uc?export=download&id=1vXxTmD_TJaRNk9ZZMvDPshipwnG1cDO_" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Obiekcje przed prezentacja</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=16Zb27HwH8eCe1jnz_nAg5UsWOnq0vsz5" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Obiekcje po prezentacji</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1b7IPCoG_EbgVtVZGz4BoY59hZC_vdGQF" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Checklista - modul VII</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=17oqO3s7LM15539YyXeTVwJ4EmugDZIcn" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Arkusz do sprawdzania - modul VII</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Modul 8 -->
+                <div id="modul8" class="module-content hidden">
+                    <h4 class="text-xl font-bold text-slate-800 mb-4 pb-2 border-b-2 border-[#a7c5a9]">Modul 8</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://drive.google.com/uc?export=download&id=1e8p6d3JOpVGKCHhXjlocQ7DyQJC-zOuX" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Checklista - modul VIII</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1k8gW8oI2pRGcEnaaxgWw7bDKKL9ckkyo" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Arkusz do sprawdzania - modul VIII</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1ONcS0wNx6aaJy3wqlBlbBzGppqLSHxi-" target="_blank" class="file-link flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <span class="w-10 h-10 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded mr-4">PDF</span>
+                            <span class="text-slate-700 font-medium">Zadania do wykonania codziennie po warsztacie Rekruter MultiLevel</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-12 pt-8 border-t border-gray-200 text-center text-slate-400 text-sm relative z-10">
+            <p class="text-xs">Heksagon — Materialy szkoleniowe</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function openModule(evt, moduleName) {
+            var moduleContents = document.getElementsByClassName("module-content");
+            for (var i = 0; i < moduleContents.length; i++) {
+                moduleContents[i].classList.add("hidden");
+            }
+
+            var moduleButtons = document.getElementsByClassName("module-tab-button");
+            for (var i = 0; i < moduleButtons.length; i++) {
+                moduleButtons[i].classList.remove("active");
+            }
+
+            document.getElementById(moduleName).classList.remove("hidden");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>

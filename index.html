@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heksagon - Materialy szkoleniowe</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .course-card {
+            transition: all 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(167, 197, 169, 0.3), 0 10px 10px -5px rgba(167, 197, 169, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen py-8">
+
+    <div class="relative container max-w-3xl my-4 p-4 sm:p-5 md:p-6 bg-white shadow-xl">
+
+        <img
+            src="images/liscie-gora.png"
+            alt="Dekoracyjne liscie"
+            class="absolute top-0 left-0 w-1/3 opacity-40 pointer-events-none"
+        >
+
+        <!-- Header -->
+        <header class="text-center mb-8 md:mb-12 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-semibold leading-tight text-slate-800 mb-2">
+                Heksagon
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 font-light">
+                Materialy szkoleniowe
+            </p>
+        </header>
+
+        <!-- Course Cards -->
+        <section class="mb-8 relative z-10">
+            <div class="flex flex-col gap-6 max-w-2xl mx-auto">
+
+                <!-- Sprzedaz Naturalna -->
+                <div class="course-card block bg-white shadow-lg overflow-hidden">
+                    <div class="p-8">
+                        <div class="mb-4">
+                            <h3 class="text-2xl font-bold text-slate-800">Sprzedaz Naturalna</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6">
+                            Kurs sprzedazy naturalnej w MLM<br>
+                            <span class="text-sm text-slate-500">Omowienie, prezentacja, ebook, notatki z zadan</span>
+                        </p>
+                        <a href="sprzedaz-naturalna/" class="text-lg font-semibold text-[#a7c5a9] hover:underline">Zobacz materialy →</a>
+                    </div>
+                </div>
+
+                <!-- Rekruter MLM -->
+                <div class="course-card block bg-white shadow-lg overflow-hidden">
+                    <div class="p-8">
+                        <div class="mb-4">
+                            <h3 class="text-2xl font-bold text-slate-800">Rekruter MLM</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6">
+                            8 modulow z materialami do pobrania<br>
+                            <span class="text-sm text-slate-500">Cwiczenia, checklisty, komendy GPT, prezentacje</span>
+                        </p>
+                        <a href="rekruter-mlm/" class="text-lg font-semibold text-[#a7c5a9] hover:underline">Zobacz materialy →</a>
+                    </div>
+                </div>
+
+                <!-- goMLM -->
+                <div class="block bg-white shadow-lg overflow-hidden opacity-40">
+                    <div class="p-8">
+                        <div class="mb-4">
+                            <h3 class="text-2xl font-bold text-slate-800">goMLM</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6">
+                            <span class="text-sm text-slate-500">Wkrotce</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-12 pt-8 border-t border-gray-200 text-center text-slate-400 text-sm relative z-10">
+            <p class="text-xs">Heksagon — Materialy szkoleniowe</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
