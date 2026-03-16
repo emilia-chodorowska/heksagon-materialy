@@ -27,6 +27,13 @@
             <h1 class="text-2xl md:text-3xl font-bold text-slate-800">Wprowadzaj tak, by ludzie chcieli działać</h1>
         </header>
 
+        <div class="relative z-10 mb-6">
+            <button onclick="copyText()" id="copy-btn" class="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium text-[#a7c5a9] border border-[#a7c5a9]/40 rounded-lg hover:bg-[#a7c5a9] hover:text-white transition">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                <span id="copy-label">Skopiuj transkrypcje</span>
+            </button>
+        </div>
+
         <article class="relative z-10 text-slate-700 leading-relaxed text-[15px] space-y-4">
             <p>Powiedziałam Ci w jednym z poprzednich nagrań, że aby mieć pasywny biznes w branży network marketingu, musisz nauczyć się rekrutować. Dlaczego musisz nauczyć się rekrutować? Bo Twoją rolą jest stworzyć zespół, stworzyć zespół, który zwycięża. I będziesz musiał stać się liderem dla ludzi z Twojego zespołu, dla ludzi, którzy Tobie zaufają i zdecydują się na współpracę z Tobą.</p>
             <p>I nawet jeśli teraz tego nie czujesz, nie potrafisz tego, to uwierz mi, że będzie to naturalny etap Twojego procesu rozwoju. Nie oczekuję od Ciebie, że będziesz od samego początku liderem. Oczekuję od Ciebie, że będziesz potrafił zrobić kilka rzeczy.</p>
@@ -61,12 +68,11 @@
         </article>
 
 
-        <div class="relative z-10 mt-6 flex justify-end">
-            <button onclick="copyText()" id="copy-btn" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-[#a7c5a9] border border-[#a7c5a9] rounded-lg hover:bg-[#a7c5a9] hover:text-white transition">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                <span id="copy-label">Kopiuj tekst</span>
-            </button>
-        </div>
+
+        <footer class="mt-12 pt-8 border-t border-gray-200 text-center relative z-10">
+            <a href="../../" class="inline-flex items-center text-sm text-[#a7c5a9] hover:underline">← Wróć do kursu</a>
+        </footer>
+    </div>
 
         <script>
         function copyText() {
@@ -78,16 +84,11 @@
                 label.textContent = 'Skopiowano!';
                 btn.classList.add('bg-[#a7c5a9]', 'text-white');
                 setTimeout(() => {
-                    label.textContent = 'Kopiuj tekst';
+                    label.textContent = 'Skopiuj transkrypcje';
                     btn.classList.remove('bg-[#a7c5a9]', 'text-white');
                 }, 2000);
             });
         }
         </script>
-
-        <footer class="mt-12 pt-8 border-t border-gray-200 text-center relative z-10">
-            <a href="../../" class="inline-flex items-center text-sm text-[#a7c5a9] hover:underline">← Wróć do kursu</a>
-        </footer>
-    </div>
 </body>
 </html>
