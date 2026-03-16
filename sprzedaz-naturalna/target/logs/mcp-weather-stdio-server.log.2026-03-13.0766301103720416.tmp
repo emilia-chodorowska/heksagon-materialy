@@ -1,4 +1,0 @@
-2026-03-15T03:43:20.674+01:00  WARN 55764 --- [discord-mcp] [ConcurrentSessionController-Worker-0] n.d.j.internal.requests.WebSocketClient  : Reconnect failed! Next attempt in 900s
-2026-03-15T03:43:20.733+01:00  WARN 29479 --- [discord-mcp] [ConcurrentSessionController-Worker-0] n.d.j.internal.requests.WebSocketClient  : Reconnect failed! Next attempt in 900s
-2026-03-15T03:43:20.715+01:00  WARN 29482 --- [discord-mcp] [ConcurrentSessionController-Worker-0] n.d.j.internal.requests.WebSocketClient  : Reconnect failed! Next attempt in 900s
-2026-03-15T03:43:20.713+01:00  WARN 29540 --- [discord-mcp] [ConcurrentSessionController-Worker-0] n.d.j.internal.requests.WebSocketClient  : Reconnect failed! Next attempt in 900s

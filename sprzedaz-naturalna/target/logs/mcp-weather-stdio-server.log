@@ -1,2 +1,0 @@
-2026-03-16T11:30:01.088+01:00  INFO 55763 --- [discord-mcp] [JDA MainWS-ReadThread] n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
-2026-03-16T11:30:01.422+01:00  INFO 55763 --- [discord-mcp] [JDA MainWS-ReadThread] net.dv8tion.jda.api.JDA                  : Finished (Re)Loading!
