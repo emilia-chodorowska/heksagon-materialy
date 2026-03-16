@@ -54,6 +54,31 @@
             <p>Osobą, która jest w taki sposób zaangażowana, osobą, która jest w taki sposób konsekwentna, osobą, która działa w taki sposób, jak Ty działasz. Jeśli odpowiedź brzmi tak, szukaj rozwoju na własną rękę. Jeżeli odpowiedź brzmi nie, to najpierw posłuchaj swojej firmy, posłuchaj swojego lidera, a dopiero potem wyciągaj wnioski.</p>
         </article>
 
+
+        <div class="relative z-10 mt-6 flex justify-end">
+            <button onclick="copyText()" id="copy-btn" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-[#a7c5a9] border border-[#a7c5a9] rounded-lg hover:bg-[#a7c5a9] hover:text-white transition">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                <span id="copy-label">Kopiuj tekst</span>
+            </button>
+        </div>
+
+        <script>
+        function copyText() {
+            const article = document.querySelector('article');
+            const text = article.innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                const label = document.getElementById('copy-label');
+                const btn = document.getElementById('copy-btn');
+                label.textContent = 'Skopiowano!';
+                btn.classList.add('bg-[#a7c5a9]', 'text-white');
+                setTimeout(() => {
+                    label.textContent = 'Kopiuj tekst';
+                    btn.classList.remove('bg-[#a7c5a9]', 'text-white');
+                }, 2000);
+            });
+        }
+        </script>
+
         <footer class="mt-12 pt-8 border-t border-gray-200 text-center relative z-10">
             <a href="../../" class="inline-flex items-center text-sm text-[#a7c5a9] hover:underline">← Wróć do kursu</a>
         </footer>
