@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <title>Sprzedaż Naturalna — Profile osobowości klientów (DISK)</title>
+  <style>
+/* Offerflow-inspired PDF style — Linear/Reflect aesthetic */
+@page { margin: 2.2cm; size: A4; }
+
+:root {
+  --foreground: hsl(0 0% 9%);
+  --muted: hsl(0 0% 45%);
+  --faint: hsl(0 0% 64%);
+  --bg: hsl(0 0% 100%);
+  --bg-secondary: hsl(0 0% 96.5%);
+  --bg-hover: hsl(0 0% 98%);
+  --border: hsl(0 0% 92%);
+  --accent: hsl(0 0% 9%);
+  --success: hsl(142 71% 45%);
+  --radius: 8px;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-size: 10.5pt;
+  line-height: 1.7;
+  color: var(--foreground);
+  background: var(--bg);
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3em 2.5em;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.011em;
+  counter-reset: section;
+}
+
+h1 {
+  font-size: 22pt;
+  font-weight: 650;
+  color: var(--foreground);
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  margin: 0 0 0.15em 0;
+  padding: 0;
+  border: none;
+}
+
+h1 + hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 1.2em 0 2.5em 0;
+}
+
+h2 {
+  font-size: 17pt;
+  font-weight: 600;
+  color: var(--foreground);
+  letter-spacing: -0.025em;
+  margin: 3.5em 0 0.8em 0;
+  padding: 1.8em 0 0 0;
+  border-top: 1px solid var(--border);
+  counter-increment: section;
+}
+
+h2::before {
+  content: counter(section) ". ";
+}
+
+h3 {
+  font-size: 12.5pt;
+  font-weight: 600;
+  color: var(--foreground);
+  letter-spacing: -0.01em;
+  margin: 1.8em 0 0.5em 0;
+}
+
+p {
+  color: var(--muted);
+  margin: 0.7em 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 2em 0;
+}
+
+blockquote {
+  background: var(--bg-secondary);
+  border-left: 2px solid var(--foreground);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 1.5em 0;
+  padding: 1em 1.4em;
+  font-style: normal;
+  color: var(--muted);
+  font-size: 10pt;
+  line-height: 1.75;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.2em 0;
+  font-size: 9.5pt;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+th {
+  background: var(--bg-secondary);
+  color: var(--muted);
+  padding: 9px 14px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 8.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border);
+}
+
+td {
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+ul, ol {
+  padding-left: 1.4em;
+  color: var(--muted);
+}
+
+li {
+  margin-bottom: 0.45em;
+  padding-left: 0.2em;
+}
+
+li::marker {
+  color: var(--faint);
+}
+
+ol li::marker {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+em {
+  color: var(--faint);
+  font-style: italic;
+}
+
+.byline {
+  color: var(--faint);
+  font-size: 9pt;
+  margin: 0.3em 0 0 0;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+table.diary {
+  max-width: 380px;
+  font-size: 8.5pt;
+}
+table.diary th, table.diary td {
+  padding: 6px 12px;
+}
+
+/* Page breaks */
+.pb { page-break-before: always; break-before: page; }
+.pb-hr { display: none; }
+
+/* Print */
+@page {
+  margin-top: 2.2cm;
+  margin-bottom: 2.2cm;
+  margin-left: 2.2cm;
+  margin-right: 2.2cm;
+}
+@media print {
+  body {
+    background: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .pb { margin-top: 0; }
+  .pb-hr { display: none; }
+}
+  </style>
+</head>
+<body>
+
+<h1 id="sprzedaż-naturalna-profile-osobowości-klientów-disk">Sprzedaż
+Naturalna — Profile osobowości klientów (DISK)</h1>
+<p class="byline">Opracowanie: Emilia Chodorowska · na podstawie książki „Sprzedaż Naturalna" Fryderyka Karzełka</p>
+<p><strong>Źródło:</strong> Fryderyk Karzełek, “Sprzedaż Naturalna”
+(2019, Złote Myśli) <strong>Metodologia:</strong> DISK prof. Johna G.
+Geyera / Persolog</p>
+<hr />
+<h2 id="profile-osobowości-klienta-podsumowanie">4 profile osobowości
+klienta — podsumowanie</h2>
+<h3 id="d-dominujący">D — Dominujący</h3>
+<ul>
+<li>Zdecydowany, roszczeniowy, silny przywódca</li>
+<li>Postrzega otoczenie jako <strong>stresujące</strong>, reaguje
+<strong>zdecydowanie</strong></li>
+<li>Nie uśmiechnie się na powitanie, chłodny, zdystansowany</li>
+<li><strong>Cel</strong>: osiąganie wyników (“Co może pan dla mnie
+zrobić?”)</li>
+<li><strong>Boi się</strong>: utraty kontroli, bycia wykorzystanym</li>
+<li><strong>Denerwuje go</strong>: rozciąganie rozmowy, niezdecydowanie,
+powolność</li>
+<li><strong>Decyzje</strong>: szybkie i jasne</li>
+<li><strong>Kupuje pod wpływem</strong>: wysokiej jakości,
+innowacyjności, konkretnych rezultatów</li>
+<li><strong>Motywują go ludzie</strong>: energiczni, bezpośredni,
+zdecydowani</li>
+</ul>
+<h3 id="i-inicjatywny">I — Inicjatywny</h3>
+<ul>
+<li>Rozmowny, otwarty, uśmiechnięty, ekspresyjny (gestykulacja)</li>
+<li>Postrzega otoczenie jako <strong>niestresujące</strong>, reaguje
+<strong>zdecydowanie</strong></li>
+<li>Nastawiony na relacje, potrzebuje akceptacji</li>
+<li><strong>Cel</strong>: zbudować relacje, zyskać akceptację</li>
+<li><strong>Boi się</strong>: utraty uznania otoczenia</li>
+<li><strong>Denerwuje go</strong>: za dużo rutyny i formalności</li>
+<li><strong>Decyzje</strong>: spontaniczne (ryzyko!)</li>
+<li><strong>Kupuje pod wpływem</strong>: nowości, symboli statusu,
+referencji (“kto jeszcze to kupił?”)</li>
+<li><strong>Motywują go ludzie</strong>: dobroduszni, optymistyczni,
+życzliwi, otwarci</li>
+</ul>
+<h3 id="s-stały">S — Stały</h3>
+<ul>
+<li>Uprzejmy, spokojny, ugodowy, ciepły</li>
+<li>Postrzega otoczenie jako <strong>niestresujące</strong>, reaguje
+<strong>powściągliwie</strong></li>
+<li>Odwzajemnia uśmiech, empatyczny, łatwo go urazić</li>
+<li><strong>Cel</strong>: współpraca (ważny serwis posprzedażowy)</li>
+<li><strong>Boi się</strong>: osobistego odrzucenia i nagłych zmian</li>
+<li><strong>Denerwują go</strong>: niespodzianki, brak przewidywalności,
+chaos</li>
+<li><strong>Decyzje</strong>: rozsądne, procesowe</li>
+<li><strong>Kupuje pod wpływem</strong>: obsługi, kontaktu,
+solidnych/wypróbowanych produktów</li>
+<li><strong>Motywują go ludzie</strong>: wzbudzający szacunek,
+skrupulatni, działający według zasad</li>
+</ul>
+<h3 id="k-krytyczny">K — Krytyczny</h3>
+<ul>
+<li>Sumienny, badawczy, rozważny, formalny</li>
+<li>Postrzega otoczenie jako <strong>stresujące</strong>, reaguje
+<strong>powściągliwie</strong></li>
+<li>Nie uśmiechnie się, powściągliwy w gestach, zdystansowany</li>
+<li><strong>Cel</strong>: poznanie struktur, standardów, konsekwencji
+decyzji (“Dlaczego właśnie tak?”)</li>
+<li><strong>Boi się</strong>: braku wytycznych</li>
+<li><strong>Denerwują go</strong>: niecierpliwość, brak czasu, niejasne
+oczekiwania</li>
+<li><strong>Decyzje</strong>: dobrze przemyślane, potrzebuje czasu na
+analizę</li>
+<li><strong>Kupuje pod wpływem</strong>: logicznych rozwiązań, badań
+naukowych, spełniania norm</li>
+<li><strong>Motywują go ludzie</strong>: prostolinijni, praktyczni,
+powściągliwi, precyzyjni</li>
+</ul>
+<hr class="pb-hr" />
+<h2 class="pb" id="kluczowy-podział">Kluczowy podział</h2>
+<table>
+
+<thead>
+<tr>
+<th></th>
+<th>Zdecydowana reakcja</th>
+<th>Powściągliwa reakcja</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Otoczenie = stresujące</strong></td>
+<td><strong>D</strong> (dominujący)</td>
+<td><strong>K</strong> (krytyczny)</td>
+</tr>
+<tr>
+<td><strong>Otoczenie = niestresujące</strong></td>
+<td><strong>I</strong> (inicjatywny)</td>
+<td><strong>S</strong> (stały)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>D i I</strong> (góra schematu) — szybko dają feedback,
+komunikatywni, otwarci</li>
+<li><strong>S i K</strong> (dół) — powściągliwi, zamknięci, potrzebują
+więcej czasu</li>
+<li><strong>D i K</strong> — skłonność do pesymizmu, trudniej budować
+zaufanie</li>
+<li><strong>I i S</strong> — skłonność do optymizmu, łatwiej wpłacają na
+Twoje “konto emocjonalne”</li>
+</ul>
+<hr class="pb-hr" />
+<h2 class="pb" id="jak-rozpoznać-typ-klienta-w-praktyce">Jak rozpoznać typ klienta
+w praktyce</h2>
+<h3 id="krok-1-reakcja-na-twój-uśmiech">Krok 1: Reakcja na Twój
+uśmiech</h3>
+<table>
+
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Twój uśmiech</th>
+<th>Reakcja klienta</th>
+<th>Co to oznacza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uśmiechasz się</td>
+<td>Odwzajemnia uśmiech, ciepły wyraz twarzy</td>
+<td><strong>Nie jest to K</strong> — prawdopodobnie I lub S</td>
+</tr>
+<tr>
+<td>Uśmiechasz się</td>
+<td>Poważny wyraz twarzy, brak uśmiechu</td>
+<td>Prawdopodobnie <strong>D</strong> lub <strong>K</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="krok-2-tempo-i-styl-komunikacji">Krok 2: Tempo i styl
+komunikacji</h3>
+<p><strong>Szybko przechodzi do konkretów?</strong> - TAK + bezpośredni,
+wali prosto z mostu, ekspresyjny, mówi głośno → <strong>D lub I</strong>
+(ekstrawertycy) - NIE + potrzebuje czasu, reaguje badawczo, mówi cicho,
+jest uprzejmy i zachowawczy → <strong>S lub K</strong>
+(introwertycy)</p>
+<h3 id="krok-3-rozróżnienie-w-ramach-par">Krok 3: Rozróżnienie w ramach
+par</h3>
+<p><strong>Odróżnienie D od I:</strong> - <strong>Dominujący</strong> —
+chłodny, zdystansowany, rywalizujący, poważna twarz, od razu pyta “co
+pan może dla mnie zrobić?”, nastawiony na WYNIKI -
+<strong>Inicjatywny</strong> — ciepły, rozmowny, uśmiechnięty, dużo
+gestykuluje, mówi o sobie, szuka akceptacji, nastawiony na RELACJE</p>
+<p><strong>Odróżnienie S od K:</strong> - <strong>Stały</strong> —
+spokojny, ugodowy, ciepły wyraz twarzy, współczujący, słucha z empatią,
+pyta “jak będzie wyglądała współpraca?” - <strong>Krytyczny</strong> —
+badawczy, rozważny, niedostępny, formalny, zdystansowany, powściągliwy w
+gestach, pyta “dlaczego właśnie tak?”</p>
+<h3 id="krok-4-sygnały-słowne">Krok 4: Sygnały słowne</h3>
+<table>
+
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Typowe pytania/zachowania</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D</strong></td>
+<td>“Ile to kosztuje?”, “Co konkretnie zyskam?”, przejmuje kontrolę nad
+rozmową, odpowiada pytaniem na pytanie</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td>Opowiada o sobie, wyolbrzymia, upraszcza, szuka uznania (“A wie pan,
+że ja kiedyś…”)</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>“Jak to będzie wyglądało krok po kroku?”, unika konfliktu, chce
+spełniać oczekiwania, bardzo uprzejmy</td>
+</tr>
+<tr>
+<td><strong>K</strong></td>
+<td>“Jakie ma pan dane na to?”, “Czy są jakieś badania?”, koncentruje
+się na szczegółach, potrzebuje pauzy na myślenie</td>
+</tr>
+</tbody>
+</table>
+<h3 id="krok-5-mowa-ciała">Krok 5: Mowa ciała</h3>
+<table>
+
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Mowa ciała</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D</strong></td>
+<td>Stanowczy, pewny siebie, może sprawiać wrażenie nieprzystępnego</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td>Ekspresyjna gestykulacja, otwarty, żywy</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>Spokojny, wyciszony, otwarta postawa, ciepły</td>
+</tr>
+<tr>
+<td><strong>K</strong></td>
+<td>Minimalna mimika i gesty, najbardziej powściągliwy ze
+wszystkich</td>
+</tr>
+</tbody>
+</table>
+<hr class="pb-hr" />
+<h2 class="pb" id="jak-postępować-z-każdym-typem">Jak postępować z każdym
+typem</h2>
+<h3 id="d-dominujący-1">D — Dominujący</h3>
+<p><strong>Twoje podejście:</strong> - Bądź <strong>konkretny i
+zwięzły</strong> — nie rozwlekaj - Mów spokojnie, ale zdecydowanie - Daj
+mu poczucie <strong>kontroli</strong> nad rozmową - Udzielaj
+bezpośrednich odpowiedzi - Działaj energicznie</p>
+<p><strong>Czego NIE robić:</strong> - Nie rób długich prezentacji - Nie
+bądź niezdecydowany - Nie pracuj powoli - Nie rozważaj w nieskończoność
+różnych scenariuszy</p>
+<p><strong>Jak zamknąć sprzedaż:</strong> - Pokaż innowacyjność, wysoką
+jakość, konkretne rezultaty - Decyzję podejmie szybko — nie przeszkadzaj
+mu w tym</p>
+<hr />
+<h3 id="i-inicjatywny-1">I — Inicjatywny</h3>
+<p><strong>Twoje podejście:</strong> - Bądź <strong>życzliwy,
+optymistyczny, uśmiechnięty</strong> - Okazuj uznanie — daj mu mówić o
+sobie - Wyrażaj otwarcie swoje opinie - Bądź zrównoważony i pewny siebie
+- Buduj relację — to dla niego priorytet</p>
+<p><strong>Czego NIE robić:</strong> - Nie bądź zbyt formalny i rutynowy
+- Nie zanudzaj szczegółami i procedurami - Nie ignoruj jego potrzeby
+akceptacji</p>
+<p><strong>Jak zamknąć sprzedaż:</strong> - Pokaż nowości, symbole
+statusu - Podaj referencje (“Pan X też to kupił”) - Uwaga: decyzje
+podejmuje spontanicznie — pilnuj, żeby nie żałował (efekt
+nadsprzedaży!)</p>
+<hr />
+<h3 id="s-stały-1">S — Stały</h3>
+<p><strong>Twoje podejście:</strong> - Bądź <strong>spokojny, uprzejmy,
+poukładany</strong> - Wzbudzaj szacunek - Przechodź do sedna, ale bez
+pośpiechu - Działaj według zasad, bądź skrupulatny - Pokaż, jak będzie
+wyglądała współpraca krok po kroku</p>
+<p><strong>Czego NIE robić:</strong> - Nie zaskakuj — żadnych
+niespodzianek - Nie działaj chaotycznie - Nie bądź nieprzewidywalny -
+Nie naciskaj — łatwo go urazić</p>
+<p><strong>Jak zamknąć sprzedaż:</strong> - Pokaż solidne, wypróbowane
+produkty - Podkreśl obsługę posprzedażową i kontakt - Potrzebuje innych,
+żeby pomóc mu zainteresować się nowymi kwestiami — bądź tym
+przewodnikiem</p>
+<hr />
+<h3 id="k-krytyczny-1">K — Krytyczny</h3>
+<p><strong>Twoje podejście:</strong> - Bądź <strong>dokładny, rzetelny,
+precyzyjny</strong> - Dostarczaj dane, fakty, liczby, badania naukowe -
+Bądź prostolinijny i praktyczny - Zachowuj umiar i powściągliwość -
+Dawaj jasne i precyzyjne argumenty - <strong>Stosuj pauzę</strong> —
+potrzebuje czasu na myślenie (nawet kilkanaście minut!)</p>
+<p><strong>Czego NIE robić:</strong> - Nie bądź niecierpliwy - Nie mów
+“nie mamy czasu” - Nie dawaj niejasnych oczekiwań - Nie buduj relacji
+“na siłę” (small talk go irytuje) - Nie pytaj “gdzie był pan na
+urlopie”</p>
+<p><strong>Jak zamknąć sprzedaż:</strong> - Pokaż logiczne rozwiązania,
+spełnianie norm - Przynieś badania, statystyki, dowody - Pomóż mu podjąć
+decyzję — sam ma z tym problem i długo zwleka</p>
+<hr class="pb-hr" />
+<h2 class="pb" id="uniwersalne-zasady-niezależnie-od-typu-klienta">Uniwersalne
+zasady (niezależnie od typu klienta)</h2>
+<ol type="1">
+<li><strong>Zadawaj pytania</strong> zamiast gadać</li>
+<li><strong>Słuchaj aktywnie</strong> — 70-80% czasu mówi klient</li>
+<li><strong>Buduj obrazy słowem</strong> (“Jak by się pan czuł, gdyby
+już to miał?”)</li>
+<li><strong>Dbaj, żeby po spotkaniu poczuł się lepiej</strong></li>
+<li><strong>Wyjdź ze swojego profilu</strong> — mów językiem klienta,
+nie swoim</li>
+<li><strong>Najpierw poznaj swój własny profil</strong> — wtedy łatwiej
+zrozumiesz, dlaczego z jednymi klientami idzie Ci naturalnie, a z innymi
+musisz świadomie wyjść poza strefę komfortu</li>
+</ol>
+
+</body>
+</html>
